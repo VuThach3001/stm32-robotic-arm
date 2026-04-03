@@ -45,11 +45,19 @@ target_link_directories(${CMAKE_PROJECT_NAME} PRIVATE
 # Add sources to executable
 target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user sources here
+    ${CMAKE_CURRENT_SOURCE_DIR}/software-architecture/src/Mcal/I2C/I2c.c
 )
 
 # Add include paths
 target_include_directories(${CMAKE_PROJECT_NAME} PRIVATE
     # Add user defined include paths
+    ${CMAKE_CURRENT_SOURCE_DIR}/software-architecture/inc
+    ${CMAKE_CURRENT_SOURCE_DIR}/software-architecture/inc/Mcal/I2C
+    ${CMAKE_CURRENT_SOURCE_DIR}/software-architecture/common
+    ${CMAKE_CURRENT_SOURCE_DIR}/software-architecture/common/CUCEL/compiler
+    ${CMAKE_CURRENT_SOURCE_DIR}/software-architecture/common/CUCEL/platform
+    ${CMAKE_CURRENT_SOURCE_DIR}/software-architecture/common/CUCEL/standard
+    ${CMAKE_CURRENT_SOURCE_DIR}/Core/Inc/GConf
 )
 
 # Add project symbols (macros)
