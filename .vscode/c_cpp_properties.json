@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "name": "STM32-F411CEU6",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/dave301/.espressif/v6.0/esp-idf/components/**",
+                "/home/dave301/.espressif/v6.0/esp-idf/components/soc/esp32s3/**",
+                "${workspaceFolder}/Core/Src",
+                "${workspaceFolder}/software-architecture/inc",
+                "${workspaceFolder}/software-architecture/inc/Mcal/I2C",
+                "${workspaceFolder}/software-architecture/common",
+                "${workspaceFolder}/software-architecture/common/CUCEL/standard",
+                "${workspaceFolder}/software-architecture/common/CUCEL/compiler",
+                "${workspaceFolder}/software-architecture/common/CUCEL/platform",
+                "${workspaceFolder}/software-architecture/src/**"
+            ],
+            "browse": {
+                "path": [
+                "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "linux-gcc-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
